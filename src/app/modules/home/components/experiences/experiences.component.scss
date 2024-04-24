@@ -1,0 +1,51 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  .experiences {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-bottom: 30px;
+    width: 100%;
+
+    h2 {
+      color: var(--text-primary);
+      font-size: 20px;
+      font-weight: 600;
+
+      margin-bottom: 20px;
+    }
+
+    .languages {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      width: 100%;
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  :host {
+    .experiences {
+      .languages {
+        justify-content: flex-start;
+        gap: 60px;
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+}
