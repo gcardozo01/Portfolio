@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  .about-me {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-bottom: 30px;
+    width: 100%;
+
+    h2 {
+      color: var(--text-primary);
+      font-size: 20px;
+      font-weight: 600;
+
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: var(--text-secondary);
+
+      font-size: 16x;
+      font-weight: 400;
+
+      border-left: 5px solid var(--purple-primary);
+      padding-left: 10px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  :host {
+    .about-me {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
