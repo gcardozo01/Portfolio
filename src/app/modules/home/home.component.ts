@@ -7,6 +7,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { SocialMediaComponent } from './components/social-media/social-media.component';
 
 @Component({
   selector: 'app-home',
@@ -19,6 +20,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
     ExperiencesComponent,
     AboutComponent,
     ProjectsComponent,
+    SocialMediaComponent,
   ],
 })
 export class HomeComponent {}

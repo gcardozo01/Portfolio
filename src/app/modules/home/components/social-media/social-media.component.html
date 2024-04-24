@@ -1,0 +1,12 @@
+<section class="social-media">
+  <h2>Social Media</h2>
+
+  <div class="medias">
+    @for(item of socialMedia(); track item;){
+    <div class="btn" (click)="redirectSocialMedia(item.link)">
+      <img src="assets/icons/social/{{ item.name }}.png" alt="" />
+      <p>{{ item.name }}</p>
+    </div>
+    }
+  </div>
+</section>

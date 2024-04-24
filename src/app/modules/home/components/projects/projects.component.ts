@@ -5,7 +5,7 @@ import { Component, signal } from '@angular/core';
 import { BtnPrimaryComponent } from '../../../../shared/components/btn-primary/btn-primary.component';
 
 // Interfaces
-import { IProjects } from '../../../../shared/interfaces/IProjects';
+import { IProjects } from '../../interfaces/IProjects';
 
 @Component({
   selector: 'app-projects',
