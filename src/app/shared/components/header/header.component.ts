@@ -21,6 +21,5 @@ export class HeaderComponent {
   togle() {
     this.themeService.toggleDarkTheme();
     this.iconTheme = this.themeService.getThemeActive();
-    console.log(this.iconTheme);
   }
 }
