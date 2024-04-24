@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ThemeService {
   private darkTheme = false;
+  private iconValue = '';
 
   constructor() {
     this.loadTheme();
@@ -17,6 +18,8 @@ export class ThemeService {
       if (this.darkTheme) {
         this.enableDarkTheme();
       }
+    } else {
+      this.iconValue = 'ligth';
     }
   }
 
@@ -40,5 +43,19 @@ export class ThemeService {
 
   isDarkTheme(): boolean {
     return this.darkTheme;
+  }
+
+  getThemeActive(): string {
+    const darkThemeValue = localStorage.getItem('darkTheme');
+
+    if (darkThemeValue) {
+      this.darkTheme = JSON.parse(darkThemeValue);
+      if (this.darkTheme) {
+        this.iconValue = 'dark';
+      } else {
+        this.iconValue = 'ligth';
+      }
+    }
+    return this.iconValue;
   }
 }
