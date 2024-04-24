@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--bg-secondary);
+
+    height: 80px;
+    width: 100%;
+    p {
+      color: var(--text-secondary);
+
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  :host {
+    footer {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}

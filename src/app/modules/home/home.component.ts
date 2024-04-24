@@ -8,6 +8,7 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
+import { FooterComponent } from '../../shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-home',
@@ -21,6 +22,7 @@ import { SocialMediaComponent } from './components/social-media/social-media.com
     AboutComponent,
     ProjectsComponent,
     SocialMediaComponent,
+    FooterComponent,
   ],
 })
 export class HomeComponent {}
